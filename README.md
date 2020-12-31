@@ -1,2 +1,6 @@
 # UnrealDemo-ToonTanks
-Udemy Unreal Course second project
+
+- This is my second Unreal Engine demo project.
+- I followed Udemy Unreal Engine course for this demo.
+- https://www.udemy.com/unrealcourse
+- Section 5 (Toon Tanks), Lectures 134-166
