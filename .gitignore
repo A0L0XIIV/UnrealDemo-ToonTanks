@@ -1,0 +1,66 @@
+# Unreal Generated Files
+**/Build
+**/Binaries
+**/DerivedDataCache
+**/Intermediate
+**/Saved
+Content/StarterContent/
+*_BuiltData.uasset
+
+# VS Generated Files
+*.db
+*.db-shm
+*.db-wal
+
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Visual Studio project
+*.sln
+
+# Logs
+*.tlog
+*.log
+
+# Others
+*.suo
+*.ipch
+*.vxproj
+*.vcxproj
+*.lastbuildstate
+*.idb
+*.pdb
+*.ilk
+*.filters
+*.user
+*.opendb
