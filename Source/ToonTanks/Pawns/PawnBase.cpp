@@ -23,10 +23,15 @@ APawnBase::APawnBase()
 	ProjictileSpawnPoint->IsBasedOnArchetype(TurretMesh);
 }
 
-void APawnBase::RotateTurretFunction(FVector LookAtTarget){
+void APawnBase::RotateTurret(FVector LookAtTarget){
 	// Update TurretMesh rotation to face towards the LookAtTarget passed in from Child Classes.
 	// TurretMesh->SetWorldRotation()...
 
+	FVector LookAtTargetCleaned = FVector(LookAtTarget.X, LookAtTarget.Y, TurretMesh->GetComponentLocation().Z);
+	FVector StartLocation = TurretMesh->GetComponentLocation();
+
+	FRotator TurretRotation = FVector(LookAtTargetCleaned - StartLocation).Rotation();
+	TurretMesh->SetWorldRotation(TurretRotation);
 }
 
 void APawnBase::Fire(){

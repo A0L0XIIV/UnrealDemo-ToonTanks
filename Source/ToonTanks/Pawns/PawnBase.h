@@ -18,7 +18,7 @@ public:
 	APawnBase();
 
 protected:
-	void RotateTurretFunction(FVector LookAtTarget);
+	void RotateTurret(FVector LookAtTarget);
 
 	void Fire();
 

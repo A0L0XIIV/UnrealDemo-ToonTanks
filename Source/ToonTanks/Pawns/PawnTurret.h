@@ -24,6 +24,8 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
+	virtual void HandleDestruction() override;
+
 private:
 	/* If you don't use BlueprintReadWrite or BlueprintReadOnly, you don't need to use meta private access.
 	* It is only for accesing private members in Blueprints.
