@@ -21,11 +21,11 @@ protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
 	UFUNCTION()
-	void TakeDamage(AActor* DamagedActor, float Damage, const UDamageTpye* DamageType, AController* InstigatedBy, AActor* DamageCauser);
+	void TakeDamage(AActor* DamagedActor, float Damage, const UDamageType* DamageType, AController* InstigatedBy, AActor* DamageCauser);
 
 private:
 	UPROPERTY(EditAnywhere)
-	float DefaultHelth = 100.0f;
+	float DefaultHealth = 100.0f;
 	float Health = 0.0f;
 
 	ATankGameModeBase* GameModeRef;
