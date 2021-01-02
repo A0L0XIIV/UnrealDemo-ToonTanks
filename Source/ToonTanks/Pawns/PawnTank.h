@@ -6,9 +6,6 @@
 #include "PawnBase.h"
 #include "PawnTank.generated.h"
 
-/**
- * 
- */
 
 class USpringArmComponent;
 class UCameraComponent;
