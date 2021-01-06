@@ -40,9 +40,7 @@ void AProjectileBase::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UP
 	// If the other actor is NOT self OR Owner AND exist, damage it
 	if (OtherActor && OtherActor != this && OtherActor != MyOwner) {
 		UGameplayStatics::ApplyDamage(OtherActor, Damage, MyOwner->GetInstigatorController(), this, DamageType);
+		UGameplayStatics::SpawnEmitterAtLocation(this, HitParticle, GetActorLocation());
+		Destroy();
 	}
-
-	// TODO: Add effects...
-
-	Destroy();
 }

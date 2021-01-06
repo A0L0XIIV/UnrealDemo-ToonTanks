@@ -8,6 +8,7 @@
 
 class UCapsuleComponent;
 class AProjectileBase;
+class UHealthComponent;
 
 UCLASS()
 class TOONTANKS_API APawnBase : public APawn
@@ -35,7 +36,13 @@ private:
 	UStaticMeshComponent* TurretMesh;
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
 	USceneComponent* ProjectileSpawnPoint;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
+	UHealthComponent* HealthComponent;
+
 	// Variables
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Projectile Type", meta = (AllowPrivateAccess = "true"))
 	TSubclassOf<AProjectileBase> ProjectileClass; // Instead of pointer, used TSubclassOf so that we can choose either C++ class or Blueprint of it
+
+	UPROPERTY(EditAnywhere, Category = "Effects")
+	UParticleSystem* DeathParticles;
 };
