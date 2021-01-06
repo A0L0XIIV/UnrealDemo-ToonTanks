@@ -25,6 +25,15 @@ void APawnTank::HandleDestruction(){
 	// Call base pawn class HandleDestruction to play effects.
 	Super::HandleDestruction();
 	// Hide Player
+	bIsPlayerAlive = false;
+
+	SetActorHiddenInGame(true);
+	SetActorTickEnabled(false);
+}
+
+bool APawnTank::GetIsPlayerAlive()
+{
+	return bIsPlayerAlive;
 }
 
 // Called every frame
